@@ -34,8 +34,8 @@ body {
 }
 
 .activeStage {
-  border: 2px solid blue;
-  box-shadow: 0px 0px 2px 2px blue;
+  border: 2px solid skyblue;
+  box-shadow: 0px 0px 2px 2px skyblue;
 }
 
 .connection {
@@ -53,13 +53,55 @@ body {
 .activeLine1 {
   width: 60px;
   height: 4px;
-  background-color: blue;
+  background-color: skyblue;
   left: 64px;
 }
 
 .line2 {
   left: 158px;
 }
+.activeLine2 {
+  width: 60px;
+  height: 4px;
+  background-color: skyblue;
+  left: 158px;
+}
+
 .line3 {
   left: 252px;
+}
+.activeLine3 {
+  width: 60px;
+  height: 4px;
+  background-color: skyblue;
+  left: 252px;
+}
+
+.deActive {
+  width: 0px;
+}
+
+.btnRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  transition: 0.5s;
+  padding: 10px 30px;
+  margin: 20px;
+  background-color: gray;
+  border-radius: 10px;
+  cursor: no-drop;
+  color: white;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.activeBtn {
+  background-color: skyblue;
+  cursor: pointer;
 }

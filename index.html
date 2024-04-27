@@ -10,22 +10,35 @@
 
 <body>
     <div class="progressBar">
-        <div class="stage activeStage">
+        <div id="stage1" class="stage activeStage">
             1
         </div>
         <div class="connection line1"></div>
-        <div class="connection activeLine1 deActive"></div>
+        <div id="line1" class="connection activeLine1 deActive"></div>
 
-        <div class="stage">
+        <div id="stage2" class="stage">
             2
         </div>
         <div class="connection line2"></div>
-        <div class="stage">
+        <div id="line2" class="connection activeLine2 deActive"></div>
+
+        <div id="stage3" class="stage">
             3
         </div>
         <div class="connection line3"></div>
-        <div class="stage">
+        <div id="line3" class="connection activeLine3 deActive"></div>
+
+        <div id="stage4" class="stage">
             4
+        </div>
+    </div>
+
+    <div class="btnRow">
+        <div id="prevBtn" class="btn" onclick="prevStage()">
+            Prev.
+        </div>
+        <div id="nextBtn" class="btn activeBtn" onclick="nextStage()">
+            Next
         </div>
     </div>
 
