@@ -1,0 +1,65 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.progressBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.stage {
+  transition: 0.5s;
+  color: gray;
+  background-color: aliceblue;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+
+.activeStage {
+  border: 2px solid blue;
+  box-shadow: 0px 0px 2px 2px blue;
+}
+
+.connection {
+  transition: 0.5s;
+
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: gray;
+}
+
+.line1 {
+  left: 64px;
+}
+.activeLine1 {
+  width: 60px;
+  height: 4px;
+  background-color: blue;
+  left: 64px;
+}
+
+.line2 {
+  left: 158px;
+}
+.line3 {
+  left: 252px;
+}
